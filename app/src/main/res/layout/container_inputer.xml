@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_dialog_verifycode"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="输入验证码"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/verify_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="验证码错误"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp">
+
+        <EditText
+            android:id="@+id/verify_editext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="98dp"
+            android:background="@drawable/shape_input_verifycode"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/verfiy_get_code"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:gravity="center"
+            android:text="34s"
+            android:background="#dedede"
+            android:textSize="15dp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginTop="22dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/verify_input_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/verify_input_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#444444"/>
+
+    </RelativeLayout>
+</LinearLayout>
